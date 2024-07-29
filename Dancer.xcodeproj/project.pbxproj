@@ -7,19 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DA05BC422C556EB6007ED04E /* MorseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA05BC412C556EB6007ED04E /* MorseApp.swift */; };
-		DA05BC442C556EB6007ED04E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA05BC432C556EB6007ED04E /* ContentView.swift */; };
-		DA05BC462C556EB8007ED04E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA05BC452C556EB8007ED04E /* Assets.xcassets */; };
-		DA05BC492C556EB8007ED04E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA05BC482C556EB8007ED04E /* Preview Assets.xcassets */; };
+		DAC8E0A82C58452E009CC84B /* Code.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8E0962C58452E009CC84B /* Code.swift */; };
+		DAC8E0A92C58452E009CC84B /* CodeDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8E0972C58452E009CC84B /* CodeDictionary.swift */; };
+		DAC8E0AA2C58452E009CC84B /* CodeTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8E0982C58452E009CC84B /* CodeTree.swift */; };
+		DAC8E0AB2C58452E009CC84B /* Prosigns.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8E0992C58452E009CC84B /* Prosigns.swift */; };
+		DAC8E0AC2C58452E009CC84B /* Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8E09A2C58452E009CC84B /* Signal.swift */; };
+		DAC8E0AD2C58452E009CC84B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAC8E09C2C58452E009CC84B /* Preview Assets.xcassets */; };
+		DAC8E0AE2C58452E009CC84B /* CodeTreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8E09E2C58452E009CC84B /* CodeTreeView.swift */; };
+		DAC8E0AF2C58452E009CC84B /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8E09F2C58452E009CC84B /* CodeView.swift */; };
+		DAC8E0B02C58452E009CC84B /* DecoderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8E0A02C58452E009CC84B /* DecoderView.swift */; };
+		DAC8E0B12C58452E009CC84B /* SignalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8E0A12C58452E009CC84B /* SignalView.swift */; };
+		DAC8E0B22C58452E009CC84B /* SignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8E0A22C58452E009CC84B /* SignView.swift */; };
+		DAC8E0B32C58452E009CC84B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAC8E0A42C58452E009CC84B /* Assets.xcassets */; };
+		DAC8E0B42C58452E009CC84B /* DancerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8E0A62C58452E009CC84B /* DancerApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DA05BC3E2C556EB6007ED04E /* Morse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Morse.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA05BC412C556EB6007ED04E /* MorseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorseApp.swift; sourceTree = "<group>"; };
-		DA05BC432C556EB6007ED04E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		DA05BC452C556EB8007ED04E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DA05BC482C556EB8007ED04E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		DA05BC4A2C556EB8007ED04E /* Morse.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Morse.entitlements; sourceTree = "<group>"; };
+		DA05BC3E2C556EB6007ED04E /* Dancer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dancer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAC8E0962C58452E009CC84B /* Code.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Code.swift; sourceTree = "<group>"; };
+		DAC8E0972C58452E009CC84B /* CodeDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeDictionary.swift; sourceTree = "<group>"; };
+		DAC8E0982C58452E009CC84B /* CodeTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeTree.swift; sourceTree = "<group>"; };
+		DAC8E0992C58452E009CC84B /* Prosigns.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prosigns.swift; sourceTree = "<group>"; };
+		DAC8E09A2C58452E009CC84B /* Signal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signal.swift; sourceTree = "<group>"; };
+		DAC8E09C2C58452E009CC84B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DAC8E09E2C58452E009CC84B /* CodeTreeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeTreeView.swift; sourceTree = "<group>"; };
+		DAC8E09F2C58452E009CC84B /* CodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
+		DAC8E0A02C58452E009CC84B /* DecoderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecoderView.swift; sourceTree = "<group>"; };
+		DAC8E0A12C58452E009CC84B /* SignalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalView.swift; sourceTree = "<group>"; };
+		DAC8E0A22C58452E009CC84B /* SignView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignView.swift; sourceTree = "<group>"; };
+		DAC8E0A42C58452E009CC84B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DAC8E0A52C58452E009CC84B /* Dancer.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = Dancer.entitlements; sourceTree = "<group>"; };
+		DAC8E0A62C58452E009CC84B /* DancerApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DancerApp.swift; sourceTree = "<group>"; };
+		DAD3BC292C5847D600FDB0CE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,7 +55,8 @@
 		DA05BC352C556EB6007ED04E = {
 			isa = PBXGroup;
 			children = (
-				DA05BC402C556EB6007ED04E /* Morse */,
+				DAD3BC292C5847D600FDB0CE /* README.md */,
+				DAC8E0A72C58452E009CC84B /* Dancer */,
 				DA05BC3F2C556EB6007ED04E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,37 +64,62 @@
 		DA05BC3F2C556EB6007ED04E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DA05BC3E2C556EB6007ED04E /* Morse.app */,
+				DA05BC3E2C556EB6007ED04E /* Dancer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DA05BC402C556EB6007ED04E /* Morse */ = {
+		DAC8E09B2C58452E009CC84B /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				DA05BC412C556EB6007ED04E /* MorseApp.swift */,
-				DA05BC432C556EB6007ED04E /* ContentView.swift */,
-				DA05BC452C556EB8007ED04E /* Assets.xcassets */,
-				DA05BC4A2C556EB8007ED04E /* Morse.entitlements */,
-				DA05BC472C556EB8007ED04E /* Preview Content */,
+				DAC8E0962C58452E009CC84B /* Code.swift */,
+				DAC8E0972C58452E009CC84B /* CodeDictionary.swift */,
+				DAC8E0982C58452E009CC84B /* CodeTree.swift */,
+				DAC8E0992C58452E009CC84B /* Prosigns.swift */,
+				DAC8E09A2C58452E009CC84B /* Signal.swift */,
 			);
-			path = Morse;
+			path = Models;
 			sourceTree = "<group>";
 		};
-		DA05BC472C556EB8007ED04E /* Preview Content */ = {
+		DAC8E09D2C58452E009CC84B /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				DA05BC482C556EB8007ED04E /* Preview Assets.xcassets */,
+				DAC8E09C2C58452E009CC84B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DAC8E0A32C58452E009CC84B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DAC8E09E2C58452E009CC84B /* CodeTreeView.swift */,
+				DAC8E09F2C58452E009CC84B /* CodeView.swift */,
+				DAC8E0A02C58452E009CC84B /* DecoderView.swift */,
+				DAC8E0A12C58452E009CC84B /* SignalView.swift */,
+				DAC8E0A22C58452E009CC84B /* SignView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DAC8E0A72C58452E009CC84B /* Dancer */ = {
+			isa = PBXGroup;
+			children = (
+				DAC8E09B2C58452E009CC84B /* Models */,
+				DAC8E09D2C58452E009CC84B /* Preview Content */,
+				DAC8E0A32C58452E009CC84B /* Views */,
+				DAC8E0A42C58452E009CC84B /* Assets.xcassets */,
+				DAC8E0A52C58452E009CC84B /* Dancer.entitlements */,
+				DAC8E0A62C58452E009CC84B /* DancerApp.swift */,
+			);
+			path = Dancer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DA05BC3D2C556EB6007ED04E /* Morse */ = {
+		DA05BC3D2C556EB6007ED04E /* Dancer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DA05BC4D2C556EB8007ED04E /* Build configuration list for PBXNativeTarget "Morse" */;
+			buildConfigurationList = DA05BC4D2C556EB8007ED04E /* Build configuration list for PBXNativeTarget "Dancer" */;
 			buildPhases = (
 				DA05BC3A2C556EB6007ED04E /* Sources */,
 				DA05BC3B2C556EB6007ED04E /* Frameworks */,
@@ -84,9 +129,9 @@
 			);
 			dependencies = (
 			);
-			name = Morse;
-			productName = Morse;
-			productReference = DA05BC3E2C556EB6007ED04E /* Morse.app */;
+			name = Dancer;
+			productName = Dancer;
+			productReference = DA05BC3E2C556EB6007ED04E /* Dancer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -104,7 +149,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DA05BC392C556EB6007ED04E /* Build configuration list for PBXProject "Morse" */;
+			buildConfigurationList = DA05BC392C556EB6007ED04E /* Build configuration list for PBXProject "Dancer" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -117,7 +162,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DA05BC3D2C556EB6007ED04E /* Morse */,
+				DA05BC3D2C556EB6007ED04E /* Dancer */,
 			);
 		};
 /* End PBXProject section */
@@ -127,8 +172,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA05BC492C556EB8007ED04E /* Preview Assets.xcassets in Resources */,
-				DA05BC462C556EB8007ED04E /* Assets.xcassets in Resources */,
+				DAC8E0AD2C58452E009CC84B /* Preview Assets.xcassets in Resources */,
+				DAC8E0B32C58452E009CC84B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +184,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA05BC442C556EB6007ED04E /* ContentView.swift in Sources */,
-				DA05BC422C556EB6007ED04E /* MorseApp.swift in Sources */,
+				DAC8E0AB2C58452E009CC84B /* Prosigns.swift in Sources */,
+				DAC8E0AE2C58452E009CC84B /* CodeTreeView.swift in Sources */,
+				DAC8E0AC2C58452E009CC84B /* Signal.swift in Sources */,
+				DAC8E0A82C58452E009CC84B /* Code.swift in Sources */,
+				DAC8E0B42C58452E009CC84B /* DancerApp.swift in Sources */,
+				DAC8E0B12C58452E009CC84B /* SignalView.swift in Sources */,
+				DAC8E0B22C58452E009CC84B /* SignView.swift in Sources */,
+				DAC8E0B02C58452E009CC84B /* DecoderView.swift in Sources */,
+				DAC8E0AF2C58452E009CC84B /* CodeView.swift in Sources */,
+				DAC8E0AA2C58452E009CC84B /* CodeTree.swift in Sources */,
+				DAC8E0A92C58452E009CC84B /* CodeDictionary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,11 +324,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Morse/Morse.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Dancer/Dancer.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Morse/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Dancer/Preview Content\"";
 				DEVELOPMENT_TEAM = 67Y4NSLDQ3;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -285,7 +340,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = org.operatorfoundation.Morse;
+				PRODUCT_BUNDLE_IDENTIFIER = org.operatorfoundation.Dancer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -297,11 +352,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Morse/Morse.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Dancer/Dancer.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Morse/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Dancer/Preview Content\"";
 				DEVELOPMENT_TEAM = 67Y4NSLDQ3;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -312,7 +368,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = org.operatorfoundation.Morse;
+				PRODUCT_BUNDLE_IDENTIFIER = org.operatorfoundation.Dancer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -322,7 +378,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DA05BC392C556EB6007ED04E /* Build configuration list for PBXProject "Morse" */ = {
+		DA05BC392C556EB6007ED04E /* Build configuration list for PBXProject "Dancer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DA05BC4B2C556EB8007ED04E /* Debug */,
@@ -331,7 +387,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DA05BC4D2C556EB8007ED04E /* Build configuration list for PBXNativeTarget "Morse" */ = {
+		DA05BC4D2C556EB8007ED04E /* Build configuration list for PBXNativeTarget "Dancer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DA05BC4E2C556EB8007ED04E /* Debug */,
