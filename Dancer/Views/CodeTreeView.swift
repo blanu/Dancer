@@ -41,7 +41,7 @@ struct CodeTreeView: View
                     if codeTree.leftChild != nil || codeTree.rightChild != nil
                     {
                         Divider()
-                        .border(.black, width: 1)
+                            .border(.tertiary, width: 1)
                     }
 
                     if let rightChild = codeTree.rightChild
@@ -63,7 +63,7 @@ struct CodeTreeView: View
                 }
             }
             .padding(4)
-            .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: codeContainer.code == codeTree.code ? 1 : 0)
+            .border(Color.secondary, width: codeContainer.code == codeTree.code ? 1 : 0)
         }
         else
         {
@@ -89,7 +89,7 @@ struct CodeTreeView: View
                     if codeTree.leftChild != nil || codeTree.rightChild != nil
                     {
                         Divider()
-                        .border(.black, width: 1)
+                        .border(.tertiary, width: 1)
                     }
 
                     if let rightChild = codeTree.rightChild
@@ -111,7 +111,7 @@ struct CodeTreeView: View
                 }
             }
             .padding(4)
-            .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: codeContainer.code == codeTree.code ? 1 : 0)
+            .border(Color.secondary, width: codeContainer.code == codeTree.code ? 1 : 0)
         }
     }
 }

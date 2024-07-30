@@ -14,7 +14,7 @@ public class CodeTree
         var leftChild: CodeTree? = nil
         var rightChild: CodeTree? = nil
 
-        let leftCode = Code(startingPoint + [di])
+        let leftCode = Code(startingPoint + [dah])
         if let leftSign = dictionary.left[leftCode]
         {
             let (leftGrandChild, rightGrandChild) = CodeTree.findChildren(dictionary, leftCode, fillDepth)
@@ -26,7 +26,7 @@ public class CodeTree
             leftChild = CodeTree(code: leftCode, sign: .character("∅"), leftChild: leftGrandChild, rightChild: rightGrandChild)
         }
 
-        let rightCode = Code(startingPoint + [dah])
+        let rightCode = Code(startingPoint + [di])
         if let rightSign = dictionary.left[rightCode]
         {
             let (leftGrandChild, rightGrandChild) = CodeTree.findChildren(dictionary, rightCode, fillDepth)

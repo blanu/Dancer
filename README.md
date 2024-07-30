@@ -10,19 +10,23 @@ In Morse code, English letters are entered using a series of dots and dashes. Da
 
 ### Left-handed Usage
 
-J - dot
-K - dash
+J - dash
+K - dot
 L - stop letter
 Space - stop letter and move onto next word
 Enter - clear message
+Delete - erase the last character of the message
+Escape - clear code sequence
 
 ### Right-handed Usage
 
-D - dot
-F - dash
+D - dash
+F - dot
 S - stop letter
 Space - stop letter and move onto next word
 Enter - clear message
+Delete - erase the last character of the message
+Escape - clear code sequence
 
 ### User Interface
 

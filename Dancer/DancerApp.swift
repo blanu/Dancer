@@ -10,12 +10,19 @@ import SwiftUI
 @main
 struct DancerApp: App
 {
+    @ObservedObject var viewSettings: ViewSettings = ViewSettings()
+
     var body: some Scene
     {
         WindowGroup
         {
             DecoderView()
+            .environment(viewSettings)
         }
-        .windowResizability(.contentSize)
+        .windowResizability(.contentMinSize)
+        .commands
+        {
+            ViewMenu(showKeybindings: $viewSettings.showKeybindings, showCodeTree: $viewSettings.showCodeTree)
+        }
     }
 }

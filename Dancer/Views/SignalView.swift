@@ -17,9 +17,11 @@ struct SignalView: View
         {
             case .di:
                 Text("•")
+                .foregroundStyle(.primary)
 
             case .dah:
                 Text("‒")
+                .foregroundStyle(.primary)
         }
     }
 }

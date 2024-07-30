@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA5168282C58A09B001D7563 /* ViewMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5168272C58A09B001D7563 /* ViewMenu.swift */; };
+		DA51682C2C58A457001D7563 /* ViewSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA51682B2C58A457001D7563 /* ViewSettings.swift */; };
 		DAC8E0A82C58452E009CC84B /* Code.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8E0962C58452E009CC84B /* Code.swift */; };
 		DAC8E0A92C58452E009CC84B /* CodeDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8E0972C58452E009CC84B /* CodeDictionary.swift */; };
 		DAC8E0AA2C58452E009CC84B /* CodeTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8E0982C58452E009CC84B /* CodeTree.swift */; };
@@ -24,6 +26,9 @@
 
 /* Begin PBXFileReference section */
 		DA05BC3E2C556EB6007ED04E /* Dancer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dancer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA5168262C589F2D001D7563 /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		DA5168272C58A09B001D7563 /* ViewMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewMenu.swift; sourceTree = "<group>"; };
+		DA51682B2C58A457001D7563 /* ViewSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSettings.swift; sourceTree = "<group>"; };
 		DAC8E0962C58452E009CC84B /* Code.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Code.swift; sourceTree = "<group>"; };
 		DAC8E0972C58452E009CC84B /* CodeDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeDictionary.swift; sourceTree = "<group>"; };
 		DAC8E0982C58452E009CC84B /* CodeTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeTree.swift; sourceTree = "<group>"; };
@@ -55,6 +60,7 @@
 		DA05BC352C556EB6007ED04E = {
 			isa = PBXGroup;
 			children = (
+				DA5168262C589F2D001D7563 /* Credits.rtf */,
 				DAD3BC292C5847D600FDB0CE /* README.md */,
 				DAC8E0A72C58452E009CC84B /* Dancer */,
 				DA05BC3F2C556EB6007ED04E /* Products */,
@@ -67,6 +73,22 @@
 				DA05BC3E2C556EB6007ED04E /* Dancer.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		DA5168292C58A390001D7563 /* Menus */ = {
+			isa = PBXGroup;
+			children = (
+				DA5168272C58A09B001D7563 /* ViewMenu.swift */,
+			);
+			path = Menus;
+			sourceTree = "<group>";
+		};
+		DA51682A2C58A449001D7563 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				DA51682B2C58A457001D7563 /* ViewSettings.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		DAC8E09B2C58452E009CC84B /* Models */ = {
@@ -104,12 +126,14 @@
 		DAC8E0A72C58452E009CC84B /* Dancer */ = {
 			isa = PBXGroup;
 			children = (
+				DAC8E0A62C58452E009CC84B /* DancerApp.swift */,
+				DA51682A2C58A449001D7563 /* Settings */,
+				DA5168292C58A390001D7563 /* Menus */,
 				DAC8E09B2C58452E009CC84B /* Models */,
-				DAC8E09D2C58452E009CC84B /* Preview Content */,
 				DAC8E0A32C58452E009CC84B /* Views */,
 				DAC8E0A42C58452E009CC84B /* Assets.xcassets */,
 				DAC8E0A52C58452E009CC84B /* Dancer.entitlements */,
-				DAC8E0A62C58452E009CC84B /* DancerApp.swift */,
+				DAC8E09D2C58452E009CC84B /* Preview Content */,
 			);
 			path = Dancer;
 			sourceTree = "<group>";
@@ -187,9 +211,11 @@
 				DAC8E0AB2C58452E009CC84B /* Prosigns.swift in Sources */,
 				DAC8E0AE2C58452E009CC84B /* CodeTreeView.swift in Sources */,
 				DAC8E0AC2C58452E009CC84B /* Signal.swift in Sources */,
+				DA51682C2C58A457001D7563 /* ViewSettings.swift in Sources */,
 				DAC8E0A82C58452E009CC84B /* Code.swift in Sources */,
 				DAC8E0B42C58452E009CC84B /* DancerApp.swift in Sources */,
 				DAC8E0B12C58452E009CC84B /* SignalView.swift in Sources */,
+				DA5168282C58A09B001D7563 /* ViewMenu.swift in Sources */,
 				DAC8E0B22C58452E009CC84B /* SignView.swift in Sources */,
 				DAC8E0B02C58452E009CC84B /* DecoderView.swift in Sources */,
 				DAC8E0AF2C58452E009CC84B /* CodeView.swift in Sources */,
@@ -324,7 +350,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = Dancer/Dancer.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
@@ -355,7 +381,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = Dancer/Dancer.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;

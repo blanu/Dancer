@@ -15,10 +15,12 @@ struct DecoderView: View
     @FocusState private var focused: Bool
     @State private var message: String = ""
     @State private var code: Code = []
+    @EnvironmentObject private var viewSettings: ViewSettings
+
     private var container: CodeContainer = CodeContainer(code: [])
 
-    let leftCodeTree: CodeTree = CodeTree(dictionary: encodings, code: [di], sign: .character("e"), fillDepth: DecoderView.fillDepth)
-    let rightCodeTree: CodeTree = CodeTree(dictionary: encodings, code: [dah], sign: .character("t"), fillDepth: DecoderView.fillDepth)
+    let leftCodeTree: CodeTree = CodeTree(dictionary: encodings, code: [dah], sign: .character("t"), fillDepth: DecoderView.fillDepth)
+    let rightCodeTree: CodeTree = CodeTree(dictionary: encodings, code: [di], sign: .character("e"), fillDepth: DecoderView.fillDepth)
 
     var body: some View
     {
@@ -28,14 +30,25 @@ struct DecoderView: View
             {
                 VStack
                 {
-                    Text("D/J")
+                    if viewSettings.showKeybindings
+                    {
+                        Text("D/J")
+                        .foregroundStyle(.primary)
+                    }
 
-                    CodeTreeView(codeTree: leftCodeTree, left: true)
+                    if viewSettings.showCodeTree
+                    {
+                        CodeTreeView(codeTree: leftCodeTree, left: true)
+                    }
                 }
 
                 VStack
                 {
-                    Text("S/L")
+                    if viewSettings.showKeybindings
+                    {
+                        Text("S/L")
+                        .foregroundStyle(.primary)
+                    }
 
                     HStack
                     {
@@ -46,9 +59,16 @@ struct DecoderView: View
 
                 VStack
                 {
-                    Text("F/K")
+                    if viewSettings.showKeybindings
+                    {
+                        Text("F/K")
+                        .foregroundStyle(.primary)
+                    }
 
-                    CodeTreeView(codeTree: rightCodeTree, left: false)
+                    if viewSettings.showCodeTree
+                    {
+                        CodeTreeView(codeTree: rightCodeTree, left: false)
+                    }
                 }
             }
 
@@ -57,6 +77,13 @@ struct DecoderView: View
             Text(message)
             .focusable()
             .focused($focused)
+            .onKeyPress(.escape)
+            {
+                self.code = []
+                self.container.code = []
+
+                return .handled
+            }
             .onKeyPress(.return)
             {
                 print(message)
@@ -83,19 +110,19 @@ struct DecoderView: View
         switch press.characters
         {
             case "d":
-                self.pressDi()
+                self.pressDah()
                 return .handled
 
             case "j":
-                self.pressDi()
+                self.pressDah()
                 return .handled
 
             case "f":
-                self.pressDah()
+                self.pressDi()
                 return .handled
 
             case "k":
-                self.pressDah()
+                self.pressDi()
                 return .handled
 
             case "s":
@@ -110,12 +137,20 @@ struct DecoderView: View
                 self.pressSpace()
                 return .handled
 
-            case "\n":
-                self.pressStop()
-                self.message = ""
+            case "\u{7F}":
+                print("DEL")
+
+                if self.message.isEmpty
+                {
+                    return .handled
+                }
+
+                self.message = String(self.message.dropLast())
+
                 return .handled
 
             default:
+                print("Uknown key \(press.key) \(KeyPress.self))")
                 return .ignored
         }
     }
